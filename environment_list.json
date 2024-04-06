@@ -1,0 +1,48 @@
+[
+    {
+        "name": "DSS3-13708.feature",
+        "browser": "chrome",
+        "version": 119,
+        "platform": "win11",
+        "resolution": "1920x1080",
+        "screen_resolution": "1920x1080"
+    
+    },
+    {
+        "name": "DSS3-13707.feature",
+        "browser": "chrome",
+        "platform": "win10",
+        "version": 118,
+        "resolution": "1920x1080",
+        "screen_resolution": "1920x1080"
+    
+    },
+    {
+        "name": "DSS3-13709.feature",
+        "browser": "chrome",
+        "platform": "macos Ventura",
+        "version": 119,
+        "resolution": "1920x1080",
+        "screen_resolution": "1920x1080"
+    
+    },
+    {
+        "name": "DSS3-13710.feature",
+        "browser": "chrome",
+        "platform": "macos Ventura",
+        "version": 120,
+        "resolution": "1920x1080",
+        "screen_resolution": "1920x1080"
+    
+    },
+    {
+        "name": "DSS3-13711.feature",
+        "browser": "chrome",
+        "platform": "macos Monterey",
+        "version": 117,
+        "resolution": "1920x1080",
+        "screen_resolution": "1920x1080"
+    
+    }
+
+]

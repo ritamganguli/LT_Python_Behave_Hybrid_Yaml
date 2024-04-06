@@ -1,0 +1,69 @@
+---
+# --env dev --env-name risagr6 
+#hyperexecute.exe --user ritamg --key rHlWAXMXwdXDlfujWQHbls73WqW9Nri5rkDk5kXdonseHMsPFL --config hybrid.yaml --env stage
+version: 0.1
+globalTimeout: 90
+testSuiteTimeout: 90
+testSuiteStep: 60
+shell: bash
+retryOnFailure: false
+runson: ${matrix.os}
+maxRetries: 2
+parallelism: 1
+autosplit: true
+concurrency: 5
+tunnel: true
+matrix:
+   os: [win,win11]
+
+runtime:
+  language: python
+  version: 3.10.0
+
+# beforeAll:
+#   local:
+#     commands:
+#       - python -m pip install jira
+#       - python -m pip install retry
+#       - pip install -r requirements.txt
+      # - python ritam.py
+
+tunnelOpts:
+ args: ["--verbose"]
+cacheKey: '{{ checksum "requirements.txt" }}'
+cacheDirectories:
+  - pip_cache
+pre:
+  - pip3 install -r requirements.txt
+  - set
+
+
+# Details about HTML Formatter at https://pypi.org/project/behave-html-formatter/
+testDiscovery:
+  type: raw
+  mode: dynamic
+  # macCommand: echo "features/test.feature"
+  command: python ritam2.py
+
+
+macTestRunnerCommand: behave $test
+winTestRunnerCommand: behave $test
+
+
+
+# mergeArtifacts: true
+
+# uploadArtefacts:
+#   - name: TestReports
+#     path:
+#       - ./behave*.json
+
+# afterAll:
+#   local:
+#     commands:
+#      - python3 -m pip install urllib3==1.26.18
+#      - python3 -m pip install email-to
+#      - python3 -m pip install sparkpost
+#      - python3 -m pip install beautifulsoup4
+#      - python3 -m pip install plotly
+#      - python3 generate_reports_and_send_an_email.py

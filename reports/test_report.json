@@ -1,0 +1,91 @@
+[
+{
+  "elements": [
+    {
+      "keyword": "Scenario",
+      "location": "features/DSS3-13707.feature:3",
+      "name": "Test Input Form on Playground",
+      "status": "passed",
+      "steps": [
+        {
+          "keyword": "Given",
+          "location": "features/DSS3-13707.feature:4",
+          "match": {
+            "arguments": [],
+            "location": "features/steps/lt_selenium_playground_steps.py:15"
+          },
+          "name": "I go to Selenium playground home page",
+          "result": {
+            "duration": 6.611037492752075,
+            "status": "passed"
+          },
+          "step_type": "given"
+        },
+        {
+          "keyword": "Then",
+          "location": "features/DSS3-13707.feature:5",
+          "match": {
+            "arguments": [],
+            "location": "features/steps/lt_selenium_playground_steps.py:20"
+          },
+          "name": "I Click on Input Form Link",
+          "result": {
+            "duration": 5.326724529266357,
+            "status": "passed"
+          },
+          "step_type": "then"
+        },
+        {
+          "keyword": "Then",
+          "location": "features/DSS3-13707.feature:6",
+          "match": {
+            "arguments": [],
+            "location": "features/steps/lt_selenium_playground_steps.py:26"
+          },
+          "name": "I enter items in the form",
+          "result": {
+            "duration": 13.861980438232422,
+            "status": "passed"
+          },
+          "step_type": "then"
+        },
+        {
+          "keyword": "When",
+          "location": "features/DSS3-13707.feature:7",
+          "match": {
+            "arguments": [],
+            "location": "features/steps/lt_selenium_playground_steps.py:61"
+          },
+          "name": "I click submit button",
+          "result": {
+            "duration": 1.025512933731079,
+            "status": "passed"
+          },
+          "step_type": "when"
+        },
+        {
+          "keyword": "Then",
+          "location": "features/DSS3-13707.feature:8",
+          "match": {
+            "arguments": [],
+            "location": "features/steps/lt_selenium_playground_steps.py:67"
+          },
+          "name": "I should verify if form submission was successful",
+          "result": {
+            "duration": 10.557822227478027,
+            "status": "passed"
+          },
+          "step_type": "then"
+        }
+      ],
+      "tags": [],
+      "type": "scenario"
+    }
+  ],
+  "keyword": "Feature",
+  "location": "features/DSS3-13707.feature:1",
+  "name": "Test run on LambdaTest Selenium Playground",
+  "status": "passed",
+  "tags": []
+}
+]

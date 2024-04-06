@@ -1,0 +1,15 @@
+{
+    "win11": [
+        "DSS3-13708.feature -D browser=chrome -D browser_version=119"
+    ],
+    "win10": [
+        "DSS3-13707.feature -D browser=chrome -D browser_version=118"
+    ],
+    "macos Ventura": [
+        "DSS3-13709.feature -D browser=chrome -D browser_version=119",
+        "DSS3-13710.feature -D browser=chrome -D browser_version=120"
+    ],
+    "macos Monterey": [
+        "DSS3-13711.feature -D browser=chrome -D browser_version=117"
+    ]
+}

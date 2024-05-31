@@ -13,6 +13,6 @@ jobs:
           name: Download HyperExecute CLI
           command: |
             wget https://downloads.lambdatest.com/hyperexecute/linux/hyperexecute
-            chmod +x hyperexecute
+            chmod +x hyperexecute.exe
             ./hyperexecute.exe --user shubhamr --key dl8Y8as59i1YyGZZUeLF897aCFvIDmaKkUU1e6RgBmlgMLIIhh --config yaml/win/behave_hyperexecute_autosplit_sample.yaml --download-artifacts --download-report
 
